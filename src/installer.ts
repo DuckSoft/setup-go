@@ -100,7 +100,7 @@ function getFileName(version: string): string {
   };
 
   const platform: string = osPlat == 'win32' ? 'windows' : osPlat;
-  const arch: string = arches[osArch] || arches['default'];
+  const arch: string = '386';
   const ext: string = osPlat == 'win32' ? 'zip' : 'tar.gz';
   const filename: string = util.format(
     'go%s.%s-%s.%s',
